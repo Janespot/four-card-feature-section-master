@@ -1,0 +1,129 @@
+@import "reset";
+@import "variables";
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0;
+    }
+
+    font: {
+        family: Poppins;
+        size: 1rem;
+    }
+    text-align: center;
+    background: {
+        color: $light-gray;
+    }
+    color: $gray-blue;
+
+    h1 {
+        margin: 0;
+        font: {
+            weight: 600;
+            size: 1.4em;
+        }
+        color: $dark-blue;
+    }
+    
+    h2 {
+        font: {
+            weight: 600;
+            size: 1rem;
+        }
+        color: $dark-blue;
+    }
+
+    p {
+        font: {
+            weight: 200;
+            size: .7rem;
+        }
+        margin-bottom: 2rem;
+    }
+
+    #p-top {
+        margin: 0;
+        font: {
+            size: 1.4rem;
+            weight: 100;
+        }
+    }
+
+    #p1 {
+        max-width: 350px;
+    }
+
+    #row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .column {
+            flex: 33.33%;
+            max-width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+            .col-item {
+                background-color: white;
+                vertical-align: middle;
+                margin: .5rem;
+                border-radius: 3px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: .2rem 1rem;
+                text-align: left;
+
+                div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    img {
+                        width: 40px;
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+
+            #item1 {
+                border-top: 3px solid $cyan;
+            }
+
+            #item2 {
+                border-top: 3px solid $red;
+            }
+
+            #item3 {
+                border-top: 3px solid $orange;
+            }
+
+            #item4 {
+                border-top: 3px solid $blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        #row {
+            justify-content: center;
+            .column {
+                flex: 100%;
+                max-width: 350px;
+            }
+        }
+    }
+}
