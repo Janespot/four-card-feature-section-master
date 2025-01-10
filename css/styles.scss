@@ -86,7 +86,7 @@ body {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 padding: .2rem 1rem;
                 text-align: left;
-                height: 200px;
+                min-height: 200px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -122,7 +122,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body {
         #row {
             justify-content: center;
