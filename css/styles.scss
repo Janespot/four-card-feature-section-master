@@ -80,11 +80,16 @@ body {
             .col-item {
                 background-color: white;
                 vertical-align: middle;
-                margin: .5rem;
+                margin: .7rem;
                 border-radius: 3px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 padding: .2rem 1rem;
                 text-align: left;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                max-width: 350px;
 
                 div {
                     width: 100%;
