@@ -30,9 +30,10 @@ body {
 
     h1 {
         margin: 0;
+        line-height: 1.5;
         font: {
-            weight: 600;
-            size: 1.4em;
+            weight: 100;
+            size: 2.2rem;
         }
         color: $dark-blue;
     }
@@ -40,7 +41,7 @@ body {
     h2 {
         font: {
             weight: 600;
-            size: 1rem;
+            size: 1.2rem;
         }
         color: $dark-blue;
     }
@@ -48,7 +49,7 @@ body {
     p {
         font: {
             weight: 200;
-            size: .7rem;
+            size: .9rem;
         }
         margin-bottom: 2rem;
     }
@@ -62,7 +63,7 @@ body {
     }
 
     #p1 {
-        max-width: 350px;
+        max-width: 500px;
     }
 
     #row {
@@ -96,8 +97,8 @@ body {
                     display: flex;
                     flex-direction: row-reverse;
                     img {
-                        width: 40px;
-                        padding-bottom: 1rem;
+                        width: 50px;
+                        padding-bottom: 2rem;
                     }
                 }
             }
